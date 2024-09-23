@@ -1,0 +1,9 @@
+.dialog_item {
+    text-decoration: none;
+    color: black;
+}
+
+.dialog_item_active {
+    text-decoration: none;
+    color: goldenrod;
+}

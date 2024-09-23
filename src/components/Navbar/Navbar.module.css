@@ -1,0 +1,21 @@
+.navbar {
+  max-width: 150px;
+  border-radius: 15px;
+  background-color: teal;
+  grid-column: 1/2;  
+}
+
+.item {
+  text-decoration: none;
+  color: aqua;
+}
+
+.item_active {
+  color: gold;
+  text-decoration: none;
+}
+
+.itemContainer {
+  padding-left: 15px;
+  padding-top: 5px;
+}

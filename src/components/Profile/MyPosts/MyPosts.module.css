@@ -1,0 +1,13 @@
+.profile {
+    background-color: blue;
+    grid-column: 2/3;
+}
+
+.posts {
+    padding-top: 70px;
+}
+
+.btn {
+    padding-left: 1%;
+    padding-top: 1%;
+}
