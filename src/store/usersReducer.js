@@ -2,35 +2,7 @@ const FOLLOW = 'FOLLOW';
 const SET_USERS = 'SET-USERS';
 
 const initialState = {
-    users: 
-    [
-        {
-            id: '1', 
-            photoURL: '',
-            followed: false, 
-            firstName: 'Евгений',
-            lastName: 'Гергелев', 
-            fullName: function() {
-                return `${this.firstName}  ${this.lastName}`},
-            status: 'Привет всем!', 
-            location: {
-                country: 'Россия', 
-                city: 'Азов'}
-        },
-        {
-            id: '2', 
-            photoURL: '',
-            followed: true, 
-            firstName: 'Алексей',
-            lastName: 'Кондаков', 
-            fullName: function() {
-                return `${this.firstName}  ${this.lastName}`},
-            status: 'Привет всем!', 
-            location: {
-                country: 'Россия', 
-                city: 'Ростов на Дону'}
-        },
-    ],
+    users: []
 };
 
 const usersReducer = (state = initialState, action) => {

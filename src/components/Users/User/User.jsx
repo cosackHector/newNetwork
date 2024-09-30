@@ -1,4 +1,5 @@
 import React from "react";
+import avatar  from "../../../asets/avatar.jpg";
 
 const User = ({
     user,
@@ -6,21 +7,25 @@ const User = ({
 }) => {
 
 console.log('user render');
-    
+    const st = {
+        width: '50px',
+        height: '50px',
+        borderRadius: '50%'
+    }
     return (
         <div className="userContainer">
             <div className="avatar">
-                <img src="" alt="" />
+                <img src={avatar} style={st} />
                 <button onClick={()=>onFollow(user.id)}>{user.followed ? 'Отписаться' : 'Подписаться'}</button>
             </div>
             <div className="userDescription">
                 <div className="userName">
-                    <h3>{user.fullName()}</h3>
+                    <h3>{user.name}</h3>
                     <p>{user.status}</p>
                 </div>
                 <div className="userLocation">
-                    <p>{user.location.country}</p>
-                    <p>{user.location.city}</p>
+                    <p>Страна</p>
+                    <p>Город</p>
                 </div>
             </div>
         </div>
