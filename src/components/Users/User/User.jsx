@@ -3,7 +3,6 @@ import React from "react";
 const User = ({
     user,
     onFollow,
-    onUnFollow,
 }) => {
 
 console.log('user render');
