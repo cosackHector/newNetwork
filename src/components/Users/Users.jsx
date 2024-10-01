@@ -1,16 +1,18 @@
-import React from "react";
+import React, { useEffect } from "react";
 import axios from "axios";
 import User from "./User/User";
 
 const  Users = (props) => {
-
   console.log('users render');
-  if(props.users.length === 0) {
-    axios
-      .get('https://social-network.samuraijs.com/api/1.0/users')
-      .then(response => props.onSetUsers(response.data.items))
-  };
 
+  useEffect( () => {
+    if(props.users.length === 0) {
+      axios
+        .get('https://social-network.samuraijs.com/api/1.0/users')
+        .then(response => props.onSetUsers(response.data.items))
+    }
+  }, [props.users])
+    
     return ( 
       <React.Fragment>
         {

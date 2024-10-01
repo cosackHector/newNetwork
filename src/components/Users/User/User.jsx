@@ -10,7 +10,7 @@ console.log('user render');
     const st = {
         width: '50px',
         height: '50px',
-        borderRadius: '50%'
+        borderRadius: '50%',
     }
     return (
         <div className="userContainer">
