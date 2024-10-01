@@ -1,0 +1,29 @@
+.userContainer {
+    margin-left: 5px;
+    margin-top: 5px;
+    max-width: 500px;
+    max-height: 100px;
+    border-radius: 10px;
+    background-color: #bdb5b5;
+}
+
+.avatarContainer {
+    display: grid;
+}
+
+.avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    align-items: center;
+}
+
+.name {
+    align-self: left;
+}
+
+.status {
+
+}
